@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Layout Example</title>
+</head>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #E2FCFF;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.menu {
+  width: 30%;
+  background-color: #fff;
+  color: #B66C6C;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #B66C6C;
+  border-radius: 10px;
+}
+
+.menu img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  margin-bottom: 10px;
+  width: 80%;
+  background-color: #B66C6C;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #B66C6C;
+  border-radius: 10px;
+}
+
+.infos {
+  width: 75%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: calc(33.33% - 20px);
+  height: 100px;
+  background-color: #B66C6C;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-container {
+  width: 100%;
+  height: auto;
+  background-color: #e2fcff;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #B66C6C;
+  border-radius: 3px;
+}
+
+.full-width-container img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.info-container {
+  width: 50%;
+  display: flex;
+}
+
+.text-blocks,
+.additional-info {
+  width: 100%;
+}
+
+.text-blocks p,
+.additional-info p {
+  margin: 0;
+}
+
+.date-time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="menu">
+      <img src="./e8b676349fbc346cdc695c80234abae0.png" alt="Imagem do menu">
+      <p>Olá USER, seja bem vindo</p>
+      <button>Agenda</button>
+      <button>Clientes</button>
+      <button>Produtos</button>
+      <button>Serviços</button>
+      <button>Sair</button>
+    </div>
+    <div class="infos">
+      <div class="square">
+        <h3>12</h3>
+          <p>AGENDAMENTOS</p>
+      </div>
+      <div class="square">
+        <h3>4</h3>
+          <p>ATENDIDOS</p>
+      </div>
+      <div class="square">
+        <h3>12</h3>
+          <p>PENDENTES</p>
+      </div>
+      <div class="full-width-container">
+        <img src="caminho-para-sua-imagem-pet.jpg" alt="Imagem do pet">
+        <div class="info-container">
+          <div class="text-blocks">
+            <p>Nome do Pet</p>
+            <p>Tutor</p>
+            <p>Contato</p>
+          </div>
+          <div class="additional-info">
+            <p>Descrição de Serviço</p>
+            <p>Histórico</p>
+            <p>Tipo de Animal</p>
+            <p>Raça</p>
+            <p>Cor</p>
+            <p>Tamanho</p>
+            <p>Peso</p>
+            <p>Valor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

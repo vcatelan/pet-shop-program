@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .menu {
+    width: 25%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .menu button {
+    margin-bottom: 10px;
+  }
+  
+  .infos {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .square {
+    width: calc(33.33% - 20px);
+    height: 100px;
+    background-color: #ccc;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .full-width-container {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .full-width-container img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .info-container {
+    width: 50%;
+  }
+  
+  .text-blocks,
+  .additional-info {
+    width: 100%;
+  }
+  
+  .text-blocks p,
+  .additional-info p {
+    margin: 0;
+  }
+  
+  .date-time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
